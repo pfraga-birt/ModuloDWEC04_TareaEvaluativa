@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b056e3;
+  color: #333;
+  padding: 20px;
+}
+
+#caja {
+  max-width: 75%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#restaurantes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.restaurante-caja {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.restaurante-caja h3 {
+  margin-bottom: 10px;
+  color: #b056e3;
+    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.restaurante-caja p {
+  margin: 5px 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.restaurante-caja:hover {
+  box-shadow: 0 0 15px rgba(176, 86, 227, 0.5);
+  cursor: pointer;
+}
+
+#filtros-botones {
+  margin-bottom: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+#filtros {
+  display: flex;
+  gap: 5px;
+}
+
+#filtros select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+#filtros button {
+  padding: 8px 12px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn-filtrar {
+  margin-left: 10px;
+  background-color: #108d40;
+}
+
+#btn-reset {
+  background-color: #810808;
+}
+
+#botones button {
+  padding: 10px 15px;
+  background-color: #b056e3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+#detalle-restaurante {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+#btnAtras {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #8f2323;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.titulos-detalle {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#restaurantes-comparacion {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#restauranteInput,
+#restaurantesArray {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  width: 40%;
+  outline: none;
+}
+
+#mapa {
+  height: 500px;
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 15px rgba(176, 86, 227, 0.5);
+  border-radius: 10px;
+}
