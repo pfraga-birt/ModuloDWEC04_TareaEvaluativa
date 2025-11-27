@@ -1,4 +1,3 @@
-import { Restaurante } from "../models/restaurante.model.js";
 import { RestauranteData } from "../data/restaurante.data.js";
 
 const API_URL =

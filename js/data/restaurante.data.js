@@ -20,12 +20,7 @@ function parsearRestaurantes(data) {
         restaurante.latitudelongitude
       )
   );
-  guardarRestaurantesEnStorage(restaurantes);
   return restaurantes;
-}
-
-function guardarRestaurantesEnStorage(restaurantes) {
-  localStorage.setItem("restaurantes", JSON.stringify(restaurantes));
 }
 
 export const RestauranteData = {
